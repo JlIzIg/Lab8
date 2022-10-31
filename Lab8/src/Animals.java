@@ -76,41 +76,26 @@ public class Animals implements Serializable {
         return animals;
     }
 
-    public Animals sortByName() {
-        Animals animals1 = new Animals();
-        animals1.setResults(getAnimals());
-        animals1.getAnimals().sort(Animal.byName);
-        return animals1;
+    public void sortByName() {
+        this.animals.sort(Animal.byName);
     }
 
-    public Animals sortByNameReverse() {
-        Animals animals1 = new Animals();
-        animals1.setResults(getAnimals());
-        animals1.getAnimals().sort(Animal.byNameReverse);
-        return animals1;
+    public void sortByNameReverse() {
+        this.animals.sort(Animal.byNameReverse);
     }
 
-    public Animals sortById() {
-        Animals animals1 = new Animals();
-        animals1.setResults(getAnimals());
-        animals1.getAnimals().sort(Animal.byId);
-        return animals1;
+    public void sortById() {
+        this.animals.sort(Animal.byId);
     }
 
-    public Animals sortByIdReverse() {
-        Animals animals1 = new Animals();
-        animals1.setResults(getAnimals());
-        animals1.getAnimals().sort(Animal.byIdReverse);
-        return animals1;
+    public void sortByIdReverse() {
+        this.animals.sort(Animal.byIdReverse);
     }
 
-    public Animals sortByWeight() {
-        Animals animals1 = new Animals();
-        animals1.setResults(getAnimals());
-        animals1.getAnimals().sort(Animal.byWeight);
-        return animals1;
+    public void sortByWeight() {
+        this.animals.sort(Animal.byWeight);
     }
-
+    
     @Override
     public String toString() {
         return "Animals{" +
