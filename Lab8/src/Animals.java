@@ -73,7 +73,42 @@ public class Animals implements Serializable {
             animalList.add(animal);
         }
         animals.setResults(animalList);
-        return  animals;
+        return animals;
+    }
+
+    public Animals sortByName() {
+        Animals animals1 = new Animals();
+        animals1.setResults(getAnimals());
+        animals1.getAnimals().sort(Animal.byName);
+        return animals1;
+    }
+
+    public Animals sortByNameReverse() {
+        Animals animals1 = new Animals();
+        animals1.setResults(getAnimals());
+        animals1.getAnimals().sort(Animal.byNameReverse);
+        return animals1;
+    }
+
+    public Animals sortById() {
+        Animals animals1 = new Animals();
+        animals1.setResults(getAnimals());
+        animals1.getAnimals().sort(Animal.byId);
+        return animals1;
+    }
+
+    public Animals sortByIdReverse() {
+        Animals animals1 = new Animals();
+        animals1.setResults(getAnimals());
+        animals1.getAnimals().sort(Animal.byIdReverse);
+        return animals1;
+    }
+
+    public Animals sortByWeight() {
+        Animals animals1 = new Animals();
+        animals1.setResults(getAnimals());
+        animals1.getAnimals().sort(Animal.byWeight);
+        return animals1;
     }
 
     @Override
