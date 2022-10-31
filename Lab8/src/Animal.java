@@ -1,11 +1,6 @@
 import java.io.Serializable;
 import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Map;
 
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -37,15 +32,15 @@ public class Animal implements Serializable {
     @JsonProperty("active_time")
     private String activeTime;
     @JsonProperty("length_min")
-    private String lengthMin;
+    private Double lengthMin;
     @JsonProperty("length_max")
-    private String lengthMax;
+    private Double lengthMax;
     @JsonProperty("weight_min")
-    private String weightMin;
+    private Double weightMin;
     @JsonProperty("weight_max")
-    private String weightMax;
+    private Double weightMax;
     @JsonProperty("lifespan")
-    private String lifespan;
+    private Double lifespan;
     @JsonProperty("habitat")
     private String habitat;
     @JsonProperty("diet")
@@ -87,43 +82,43 @@ public class Animal implements Serializable {
         this.activeTime = activeTime;
     }
 
-    public String getLengthMin() {
+    public Double getLengthMin() {
         return lengthMin;
     }
 
-    public void setLengthMin(String lengthMin) {
+    public void setLengthMin(Double lengthMin) {
         this.lengthMin = lengthMin;
     }
 
-    public String getLengthMax() {
+    public Double getLengthMax() {
         return lengthMax;
     }
 
-    public void setLengthMax(String lengthMax) {
+    public void setLengthMax(Double lengthMax) {
         this.lengthMax = lengthMax;
     }
 
-    public String getWeightMin() {
+    public Double getWeightMin() {
         return weightMin;
     }
 
-    public void setWeightMin(String weightMin) {
+    public void setWeightMin(Double weightMin) {
         this.weightMin = weightMin;
     }
 
-    public String getWeightMax() {
+    public Double getWeightMax() {
         return weightMax;
     }
 
-    public void setWeightMax(String weightMax) {
+    public void setWeightMax(Double weightMax) {
         this.weightMax = weightMax;
     }
 
-    public String getLifespan() {
+    public Double getLifespan() {
         return lifespan;
     }
 
-    public void setLifespan(String lifespan) {
+    public void setLifespan(Double lifespan) {
         this.lifespan = lifespan;
     }
 
