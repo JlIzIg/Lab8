@@ -62,6 +62,20 @@ public class Animals implements Serializable {
         return temp;
     }
 
+    public Animals getRandomAnimals() throws IOException {
+        Animals animals = new Animals();
+        List<Animal> animalList = new ArrayList<>();
+        int i;
+        System.out.println("List of zoo animals");
+        for (i = 0; i < 5; i++) {
+            Animal animal = this.loadByURL("https://zoo-animal-api.herokuapp.com/animals/rand/");
+            System.out.println(animal);
+            animalList.add(animal);
+        }
+        animals.setResults(animalList);
+        return  animals;
+    }
+
     @Override
     public String toString() {
         return "Animals{" +
